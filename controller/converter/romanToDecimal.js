@@ -1,5 +1,5 @@
 const listDecimalNumbers = (values) => {
-
+	
 	const converterRoman = { 
 		M: 1000,
 		D: 500,
@@ -9,14 +9,12 @@ const listDecimalNumbers = (values) => {
 		V: 5, 
 		I: 1 
 	}
-
 	
 	// Converte os numeros romanos para decimal
 	let listDecimalNumbers = [];
 	values.forEach(value => {
 		listDecimalNumbers.push(converterRoman[value])
 	});
-
 
 	return listDecimalNumbers;
 }

@@ -3,10 +3,11 @@ const { numberRoman } = require('../../converter/decimalToRoman')
 
 const calculationSumRoman = (values) => {
 	const romanNumbers = values;
+	
+	// Converte a lista de numeros romanos para o padrao: (X + Y = Z)
 	const standartDecimalList = romanNumbers.join(" + ")
-
-	// Converte a lista de numeros decimais para o padrao: (X + Y = Z)
 	const convertedList = `(${standartDecimalList} = ${numberRoman(sum(values))})`
+	
 	return convertedList;
 }
 

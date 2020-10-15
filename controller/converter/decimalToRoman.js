@@ -18,8 +18,7 @@ const numberRoman = (value) => {
     IV: 4,
     I: 1
   }
-
-
+  
   // Converte o decimal para romano
   let numberRoman = "";
   for (let key in converterDecimal) {
