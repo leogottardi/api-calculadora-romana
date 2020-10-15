@@ -5,8 +5,8 @@ const calculationSumRoman = (values) => {
 	const romanNumbers = values;
 	
 	// Converte a lista de numeros romanos para o padrao: (X + Y = Z)
-	const standartDecimalList = romanNumbers.join(" + ")
-	const convertedList = `(${standartDecimalList} = ${numberRoman(sum(values))})`
+	const standardDecimalList = romanNumbers.join(" + ")
+	const convertedList = `(${standardDecimalList} = ${numberRoman(sum(values))})`
 	
 	return convertedList;
 }
