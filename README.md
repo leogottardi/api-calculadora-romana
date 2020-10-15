@@ -2,7 +2,7 @@
 
 # Api Calculadora Romana
 <h1>
-<img src="https://raw.githubusercontent.com/leogottardi/api-calculadora-romana/master/.github/api-calculadora.png">
+<img src="https://raw.githubusercontent.com/leogottardi/api-calculadora-romana/main/.github/api-calculadora.png">
 </h1>
 
 # Indice
