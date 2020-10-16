@@ -39,17 +39,17 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias :
   
   valores disponíveis:
   M: 1000
-  CM: 900
+  CM:900
   D: 500
-  CD: 400
+  CD:400
   C: 100
-  XC: 90
+  XC:90
   L: 50
-  XL: 40
+  XL:40
   X: 10
-  IX: 9
+  IX:9
   V: 5
-  IV: 4
+  IV:4
   I: 1
   
   ```
