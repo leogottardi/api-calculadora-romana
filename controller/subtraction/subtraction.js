@@ -1,15 +1,12 @@
-const { listDecimalNumbers } = require('../converter/romanToDecimal');
-
+// O primeiro valor da lista sempre será positivo
 const subtraction = (values) => {
+  // Insere o primeiro valor da lista de decimais na variavel
+  let subtraction = values[0];
 
-  // recebe os numeros convertidos para decimal
-  const decimalNumbers = listDecimalNumbers(values);
-
-  // REVER A SUBTRAÇÃO
-  let subtraction = decimalNumbers[0] * 2;
-  decimalNumbers.forEach(value => {
-    subtraction -= value
-  });
+  // Subtrai o segundo valor pelo primeiro assim por diante
+  for (let i = 1; i < values.length; i++) {
+    subtraction -= values[i]
+  }
 
   return subtraction;
 }
