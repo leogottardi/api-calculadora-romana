@@ -1,5 +1,6 @@
 // O primeiro valor da lista sempre será positivo
 const subtraction = (values) => {
+  
   // Insere o primeiro valor da lista de decimais na variavel
   let subtraction = values[0];
 
