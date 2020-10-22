@@ -1,12 +1,12 @@
 // Reference: https://www.mathsisfun.com/roman-numerals.html
-const numberRoman = (value, converter) => {
+const numberRoman = (value, converterList) => {
 
   // Converte o decimal para romano
   let numberRoman = "";
-  for (let key in converter) {
-    while (value >= converter[key]) {
+  for (let key in converterList) {
+    while (value >= converterList[key]) {
       numberRoman += key;
-      value -= converter[key]
+      value -= converterList[key]
     }
   }
 
