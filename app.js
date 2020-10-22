@@ -11,9 +11,27 @@ const { listDecimalNumbers } = require('./controller/converter/romanToDecimal')
 
 app.use(express.json());
 
+
+const converterRoman = {
+  M: 1000,
+  CM: 900,
+  D: 500,
+  CD: 400,
+  C: 100,
+  XC: 90,
+  L: 50,
+  XL: 40,
+  X: 10,
+  IX: 9,
+  V: 5,
+  IV: 4,
+  I: 1
+}
+
+
 app.post('/sum', (req, res) => {
   const { values } = req.body;
-  const decimalNumbers = listDecimalNumbers(values);
+  const decimalNumbers = listDecimalNumbers(values, converterRoman);
 
   let resultSumDecimal = calculationSumDecimal(decimalNumbers)
   let resultSumRoman = calculationSumRoman(decimalNumbers)
@@ -24,7 +42,7 @@ app.post('/sum', (req, res) => {
 
 app.post('/subtraction', (req, res) => {
   const { values } = req.body;
-  const decimalNumbers = listDecimalNumbers(values);
+  const decimalNumbers = listDecimalNumbers(values, converterRoman);
 
   let resultSubtractionDecimal = calculationSubtractionDecimal(decimalNumbers)
   let resultSubtractionRoman = calculationSubtractionRoman(decimalNumbers)
@@ -36,4 +54,3 @@ app.post('/subtraction', (req, res) => {
 app.listen(3333, () =>
   console.log("Api Online")
 )
-
