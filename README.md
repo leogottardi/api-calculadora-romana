@@ -30,7 +30,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias :
   Para utilizar a api você deve simular com [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/).
   
  - Para somar deve utilizar a url: http://localhost:3333/sum
- - Para subtrair deve utilizar a url: http://localhost:3333/subtract
+ - Para subtrair deve utilizar a url: http://localhost:3333/subtraction
  - O parâmetro deve ser passado no formato json com os valores dentro de um array como mostro a baixo. 
   ```
   {
