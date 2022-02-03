@@ -60,7 +60,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias :
     $ git clone https://github.com/leogottardi/api-calculadora-romana.git
 
     #Entrar no diretório
-    $ git cd api-calculadora-romana
+    $ cd api-calculadora-romana
 
     #Instalar as dependencias
     $ npm install express
